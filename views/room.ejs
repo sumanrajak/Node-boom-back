@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOM</title>
+    <script>  const id="<%= roomid %>";
+    const id2="<%= fullUrl %>";
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@562&display=swap" rel="stylesheet">
+</head>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+<script src="https://kit.fontawesome.com/058876fc2f.js" crossorigin="anonymous"></script>
+<script>
+  var socket = io();
+</script>
+
+<body>
+    <H1 id="logo">BOOM meeting </H1>
+
+    
+    <div class="main">
+        <div class="mainl">
+            <div class="mainvid">
+                <div id="vid-grid">
+
+                </div>
+            </div>
+            <div class="contrl">
+                <div class="buttons">
+                    <div class="button main__mute_button" onclick="muteUnmute()">
+                        <i class="fas fa-volume-mute" ></i>mute  </div>
+                    <div class="button main__video_button" onclick="playStop()">
+                        <i class="fas fa-video-slash"></i>no video</div>
+                        <div class="button">
+                            <h6 id='inv'>Invite link :  </h6>
+                            <p id='demo' ></p>
+                            <div class="cpy">
+                            <input id='links'>
+                            <button  onclick="Copy()">copy</button>
+                        </div>
+                        </div>
+                        <div class="button end" onclick="closeWin()">END</div>
+                        
+                </div>
+                   
+                </div>
+        </div>
+        <div class="mainr">
+            
+            
+                <object type="text/html" data="https://chatbox-45ddc.web.app/" height="100%">
+                </object>
+            
+        </div>
+    </div>
+    <br>
+    <footer>
+    
+</footer>
+
+    <script  src="Script.js"></script>
+
+</body>
+</html>

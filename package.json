@@ -2,7 +2,7 @@
   "name": "boom",
   "version": "1.0.0",
   "description": "Boom meating",
-  "main": "Server.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"

@@ -17,7 +17,7 @@ app.get('/',(req,res)=>{
     //console.log(__dirname+'working')
 })
 app.get('/:room',(req,res)=>{
-    res.render('room',{roomid:req.params.room,  fullUrl:req.protocol + '://' + req.get('host') + req.originalUrl
+    res.render('room',{roomid:req.params.room,  fullUrl: 'https://' + req.get('host') + req.originalUrl
 });
 
     //console.log(__dirname+'working and the room id is:: '+req.params.room)
